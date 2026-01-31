@@ -54,3 +54,24 @@
 .strip-bg-cover {
   background-size: cover;
 }
+
+.detailed-tease ul {
+  margin-left: 1em;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 540px;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.strip .service-detailed:nth-child(even) {
+  flex-direction: row-reverse; /* Swaps to Text Left, Image Right */
+}

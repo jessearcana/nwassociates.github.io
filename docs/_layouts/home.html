@@ -3,11 +3,20 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro">
+<div class="intro" {% if page.intro_background_image %} style="background-image: url('{{ page.intro_background_image | relURL }}'); background-position: center; background-size: cover;"{% endif %}>
   <div class="container">
+    {% if page.home_banner_image %}
     <div class="row home-banner" style="margin:0;">
       <img alt="{{ page.title }}" class="home-banner-image{% if page.home_banner_image_hide_mobile %} home-banner-image-hide-mobile{% endif %}" src="{{ page.home_banner_image | relURL }}" style="width: 100%;">
     </div>
+    {% endif %}
+    {% if page.span_title %}
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-12 text-center">
+        <h1 class="intro-span-title">{{ page.span_title }}</h1>
+      </div>
+    </div>
+    {% endif %}
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
         {{ content }}
@@ -20,9 +29,15 @@ bodyClass: "page-home"
         <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
       </div>
       {% endif %}
+      {% if page.intro_video %}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative" style="justify-content: flex-end;">
+        <video alt="{{ page.title }}" class="intro-image{% if page.intro_video_absolute %} intro-video-absolute{% endif %}{% if page.intro_video_hide_on_mobile %} intro-video-hide-mobile{% endif %}" src="{{ page.intro_video | relURL }}" controls>Your browser does not support the video tag.</video>
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>
+{% if site.services_style == "short" %}
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
@@ -47,6 +62,36 @@ bodyClass: "page-home"
     </div>
   </div>
 </div>
+{% endif %}
+{% if site.services_style == "detailed" %}
+<div class="strip">
+  <div class="container pt-6 pb-6 pb-md-10">
+    {% assign limit = site.home.limit_services | default: 6 %}
+    {% for service in site.services limit: limit %}
+    <div class="row service-detailed justify-content-start">
+      <div class="col-12 col-md-6 mb-0 service service-summary">
+        <div class="service-wrapper">
+          <div class="service-content detailed-tease">
+            <h2 class="service-title">
+              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+            </h2>
+            <p>{{ service.detailed_tease | markdownify }} <a href="{{ service.url | relative_url }}"> more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-0 service service-image fill">
+        <img alt="{{ service.title }} image" src="{{ service.image | relative_url }}" />
+      </div>
+    </div>
+    {% endfor %}
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
 
 {% if site.data.features %}
 <div class="strip strip-grey">

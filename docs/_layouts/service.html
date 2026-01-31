@@ -2,15 +2,33 @@
 layout: default
 bodyClass: "page-service"
 ---
-
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+<div class="intro" {% if page.intro_background_image %} style="background-image: url('{{ page.intro_background_image | relative_url }}'); background-position: center; background-size: cover;"{% endif %}>
+  <div class="container">
+    {% if page.span_title %}
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-12 text-center">
+        <h1 class="intro-span-title">{{ page.span_title }}</h1>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+<div class="container pb-6 pb-md-10">
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="service service-single">
+        {% unless page.span_title %}
         <h1 class="title">{{page.title}}</h1>
+        {% endunless %}
         <div class="content"><p>{{page.tease}}</p>{{content}}</div>
       </div>
-      {% include services-footer.html %}
+    </div>
+    <div class="col-12 col-md-4">
+      {% if page.image %}
+      <div class="service mb-4">
+        <img alt="{{ page.title }} image" src="{{ page.image | relative_url }}" width=100%/>
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>

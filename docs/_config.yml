@@ -1,24 +1,26 @@
 baseurl: ''
 permalink: pretty
-title: 'Apex Arcana'
+title: 'Nathan Winter & Associates'
+show_title: false
 email: 'webmaster@arcana.com.au'
-description: 'Data and IT solutions for integration, scale and better human experiences. Leverage 25 years of experience to understand and solve your hardest problems.'
+description: 'Management Consultants that specialise in providing Governance, Risk Management, Occupational Health & Safety, Quality & Environmental Advisory and Assurance Services.'
+services_style: detailed # possible values: detailed, short
 
-# url: "http://arcana.com.au" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://nwassociates.com.au" # the base hostname & protocol for your site, e.g. http://example.com
 
 homepage:
   show_call_box: true
 
 footer:
-  copyright_text: 'Free Jekyll theme by <a class="zerostatic" href="https://www.zerostatic.io">www.zerostatic.io</a>'
+  copyright_text: '© Copyright Nathan Winter & Associates 2025 – All rights reserved.'
 
 seo:
-  meta_og_title: "Apex Arcana - IT Consulting"
+  meta_og_title: "Nathan Winter & Associates"
   meta_og_type: "website"
-  meta_og_url: "https://arcana.com.au"
-  meta_og_image: "https://arcana.com.au/images/social.png"
-  meta_og_description: "Data and IT solutions for integration, scale and better human experiences. Leverage 25 years of experience to understand and solve your hardest problems."
-  google_analytics_id: "G-DML1QM0XS9"
+  meta_og_url: "https://nwassociates.com.au"
+  meta_og_image: "https://nwassociates.com.au/images/social.png"
+  meta_og_description: "Management Consultants that specialise in providing Governance, Risk Management, Occupational Health & Safety, Quality & Environmental Advisory and Assurance Services."
+  google_analytics_id: ""
 
 logo:
   mobile: "images/logo/logo.svg"
@@ -46,11 +48,6 @@ defaults:
       layout: "service"
   - scope:
       path: ""
-      type: "products"
-    values:
-      layout: "product"
-  - scope:
-      path: ""
       type: "team"
     values:
       layout: "team"
@@ -60,7 +57,7 @@ sass:
   style: compact # possible values: nested expanded compact compressed
   precision: 10
 
-url: "https://arcana.com.au"
+url: "https://nwassociates.com.au"
 
 plugins:
   - jekyll-environment-variables

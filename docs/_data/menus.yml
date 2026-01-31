@@ -1,15 +1,15 @@
 main:
-  - name: "News"
-    url: "/news/"
+  - name: "About Us"
+    url: "/"
     weight: 1
-  - name: "Services"
-    url: "/services/"
-    weight: 2
-  - name: "Team"
+  - name: "Our People"
     url: "/team/"
+    weight: 2
+  - name: "Our Services"
+    url: "/services/"
     weight: 3
-  - name: "About"
-    url: "/about/"
+  - name: "Latest News"
+    url: "/news/"
     weight: 4
   - name: "Contact"
     url: "/contact/"

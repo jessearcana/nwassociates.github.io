@@ -4,4 +4,4 @@ layout: contact
 description: Contact
 ---
 
-Send us an email today if you would like help with your Data Engineering or Solution Design and Architecture challenges. Typical response time is next business day. LinkedIn requests are only accepted from people I've actually met (physical or virtual).
+Get in contact via the contact methods below or subscribe via MailChimp to receive emails Nathan Winter & Associates send out to interested parties.
