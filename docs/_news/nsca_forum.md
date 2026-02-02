@@ -1,0 +1,18 @@
+---
+title: "NSCA Foundation Safety Forum"
+date: 2025-05-07T10:09:57+09:30
+layout: article
+weight: 1
+image: "images/nsca_forum.jpg"
+tease: "NSCA Foundation Safety Forum - May 2025. "
+---
+
+# NSCA Foundation Safety Forum
+
+Today I attended the NSCA Foundation Safety Forum, where there were presentations from Glenn Farrell, Dr Tessa Bailey, Chanel Nesci, Nathan Bolton, Luke Holland, and Bernie Doyle.
+
+Thank you all for your presentations. Nathan Bolton's presentation was particularly impactful. Thank you for your service to our country. Other key takeaways were the importance of supervisors, managers, and executives being able to identify psychosocial risk red flags and responding to them before formal complaints are made.
+
+Luke Holland reinforced the point about an increasing focus on Officers' WHS due diligence obligations and prosecution of Officers by WHS regulators.
+
+If you are an Australian Director, CEO, or Business Owner (all of whom have WHS due diligence obligations) and want advice about how to ensure you are fulfilling your due diligence obligations, please contact us Nathan Winter & Associates to arrange an appointment.

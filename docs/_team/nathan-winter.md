@@ -1,10 +1,10 @@
 ---
 title: "Nathan Winter, Principal Consultant"
 date: 2026-01-28T12:22:00+10:30
-image: "/images/nathan_winter-400x526.jpg"
+image: "/images/nathan_winter.jpg"
 jobtitle: "Principal Consultant"
 promoted: true
-linkedinurl: "https://www.linkedin.com/nathwinter"
+linkedinurl: "https://www.linkedin.com/in/nathwinter"
 weight: 1
 ---
 

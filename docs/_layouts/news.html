@@ -3,8 +3,15 @@ layout: default
 bodyClass: "page-news"
 ---
 
-<div class="intro">
+<div class="intro" {% if page.intro_background_image %} style="background-image: url('{{ page.intro_background_image | relative_url }}'); background-position: center; background-size: cover;"{% endif %}>
   <div class="container">
+    {% if page.span_title %}
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-12 text-center">
+        <h1 class="intro-span-title">{{ page.span_title }}</h1>
+      </div>
+    </div>
+    {% endif %}
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
         {{ content }}
@@ -17,17 +24,20 @@ bodyClass: "page-news"
     </div>
   </div>
 </div>
-
 <div class="container pt-6 pb-6">
   <div class="row">
-    {% for article in site.news %}
+    {% for article in site.news reversed %}
     <div class="col-12 col-md-6 mb-3">
       <div class="article article-summary">
         <div class="article-content">
           <h2 class="article-title">
             <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
           </h2>
+          {% if article.image %}
+            <img alt="{{ article.title }} image" src="{{ article.image | relative_url }}" width=100% />
+          {% endif %}
           <p>{{ article.tease | markdownify | strip_html }}</p>
+          <a href="{{ article.url | relative_url }}">... read more</a>
         </div>
       </div>
     </div>

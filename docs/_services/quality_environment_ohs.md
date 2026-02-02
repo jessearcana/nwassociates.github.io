@@ -13,6 +13,7 @@ detailed_tease: |4+
         - Procedures
         - Safe Work Instructions
         - Risk Assessments, Safe Work Method Statements, Job Hazard Analysis
+        - ...
 ---
 
 - Development of Quality, Environment, Occupational Health & Safety or Integrated Management Systems to achieve (ISO9001, ISO14001 or ISO45001(AS4801), including;

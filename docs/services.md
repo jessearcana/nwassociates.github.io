@@ -1,11 +1,12 @@
 ---
-title: Services
+title: "Our Services"
+intro_background_image: "images/header-bg.jpg"
 layout: services
 intro_image: "images/consulting.jpg"
 intro_image_absolute: false
 intro_image_hide_on_mobile: true
+
 ---
+# Our Services
 
-# Consulting and project work
-
-Contact us to discuss how investing in a few days of advice could unlock huge value for your business. Alternately, suggest a report, deliverable, research project or design that can be scoped and quoted for delivery in an agreed timeframe.
+Access a wealth of experience across Governance, Risk Management, Occupational Health & Safety, Quality & Environmental Advisory and Assurance.

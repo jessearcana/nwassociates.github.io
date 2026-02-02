@@ -14,7 +14,7 @@ detailed_tease: |4+
         - Processes to ensure Directors and Officers are complying with their Work Health & Safety Due Diligence Obligations
         - Modern Slavery Statements and associated processes
         - Board and Audit & Risk Committee Charters
-
+        - ...
 ---
 
 - Board Performance Reviews

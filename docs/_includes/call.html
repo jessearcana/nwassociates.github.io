@@ -1,28 +1,32 @@
 <div class="call">
   <div class="call-box-top">
     {% if site.data.contact.phone %}
-        <div class="call-phone"><strong>Phone: </strong> {{ site.data.contact.phone }} </div>
+        <div class="call-phone my-1"><strong>Phone: </strong> {{ site.data.contact.phone }} </div>
+    {% endif %}
+    {% if site.data.contact.mobile %}
+        <div class="call-phone my-1"><strong>Mobile: </strong> {{ site.data.contact.mobile }} </div>
     {% endif %}
     {% if site.data.contact.email_obfuscated %}
-    <div class="call-email"><strong>Email: </strong>
+    <div class="call-email my-1"><strong>Email: </strong>
       <a class="eml-protected" href="#">{{ site.data.contact.email_obfuscated }}</a>
     </div>
     {% elsif site.data.contact.email %}
-    <div class="call-email"><strong>Email: </strong>
+    <div class="call-email my-1"><strong>Email: </strong>
       <a href="mailto:{{ .site.data.contact.email }}">
         {{ site.data.contact.email }}
       </a>
     </div>
     {% endif %}
     {% if site.data.contact.linkedin %}
-    <div class="call-linkedin">
+    <div class="call-linkedin my-1">
       <a class="call-linkedin-logo" href="{{ site.data.contact.linkedin }}">
         <img alt="LinkedIn - {{site.data.contact.linkedin}}" src="/images/logo/linkedin.svg" />
-      </a>
-      <a class="call-linkedin-text d-none d-lg-block" href="{{ site.data.contact.linkedin }}">
-        {{site.data.contact.linkedin}}
+        {{site.data.contact.linkedin | replace: "https://www.linkedin.com/", "" }}
       </a>
     </div>
+    {% endif %}
+    {% if site.data.contact.ABN %}
+    <div class="call-ABN my-1"><strong>ABN: </strong> {{ site.data.contact.ABN }} </div>
     {% endif %}
   </div>
     {% if include.show_button %}
