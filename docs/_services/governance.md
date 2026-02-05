@@ -2,11 +2,12 @@
 title: "Governance Advisory Services"
 intro_background_image: "images/header-bg.jpg"
 span_title: "Governance Advisory Services"
+description: "Expert governance advisory services encompassing board performance reviews, enterprise risk assessments, and development of compliance processes for directors, officers, and modern slavery statements."
 date: 2026-01-11T10:09:57+09:30
 layout: service
 weight: 1
-tease: ""
 image: "images/governance.jpg"
+show_in_full: true
 detailed_tease: |4+
     - Board Performance Reviews
     - Facilitation of Enterprise Risk Assessments

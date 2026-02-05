@@ -1,10 +1,13 @@
 ---
 title: "Quality, Environment & Occupational Health & Safety Advisory Services"
+intro_background_image: "images/header-bg.jpg"
+span_title: "Quality, Environment & Occupational Health & Safety Advisory Services"
+description: "Development of ISO-compliant Quality, Environment, and Occupational Health & Safety management systems, including policies, audits, training, and regulatory assistance."
 date: 2026-01-30T10:09:46+10:30
 layout: service
 weight: 2
-tease: ""
 image: "images/advisory.jpg"
+show_in_full: true
 detailed_tease: |4+
     - Development of Quality, Environment, Occupational Health & Safety or Integrated Management Systems to achieve (ISO9001, ISO14001 or ISO45001(AS4801), including;
         - Policies

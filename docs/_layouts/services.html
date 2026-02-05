@@ -61,7 +61,11 @@ bodyClass: "page-services"
             <h2 class="service-title">
               <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
             </h2>
-            <p>{{ service.detailed_tease | markdownify }} <a class="button mt-1 button-primary" href="{{ service.url | relative_url }}"> READ MORE</a></p>
+            {% if service.show_in_full %}
+              <p>{{ service.content | markdownify }}</p>
+            {% else %}
+              <p>{{ service.detailed_tease | markdownify }} <a class="button mt-1 button-primary" href="{{ service.url | relative_url }}"> READ MORE</a></p>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -70,11 +74,6 @@ bodyClass: "page-services"
       </div>
     </div>
     {% endfor %}
-    <div class="row pt-1 justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
-      </div>
-    </div>
   </div>
 </div>
 {% endif %}
