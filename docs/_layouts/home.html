@@ -69,13 +69,17 @@ bodyClass: "page-home"
     {% assign limit = site.home.limit_services | default: 6 %}
     {% for service in site.services limit: limit %}
     <div class="row service-detailed justify-content-start">
-      <div class="col-12 col-md-6 mb-0 service service-summary">
+      <div class="col-12 col-md-6 my-1 service service-summary">
         <div class="service-wrapper">
           <div class="service-content detailed-tease">
             <h2 class="service-title">
               <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
             </h2>
-            <p>{{ service.detailed_tease | markdownify }} <a href="{{ service.url | relative_url }}"> more</a></p>
+            {% if service.show_in_full %}
+              <p>{{ service.content | markdownify }}</p>
+            {% else %}
+              <p>{{ service.detailed_tease | markdownify }} <a class="button mt-1 button-primary" href="{{ service.url | relative_url }}"> READ MORE</a></p>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -84,11 +88,6 @@ bodyClass: "page-home"
       </div>
     </div>
     {% endfor %}
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
-      </div>
-    </div>
   </div>
 </div>
 {% endif %}
