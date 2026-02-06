@@ -5,6 +5,7 @@ show_title: false
 email: 'webmaster@arcana.com.au'
 description: 'Management Consultants that specialise in providing Governance, Risk Management, Occupational Health & Safety, Quality & Environmental Advisory and Assurance Services.'
 services_style: detailed # possible values: detailed, short
+intro_background_image: "images/header-bg.jpg"
 
 # url: "https://nwassociates.com.au" # the base hostname & protocol for your site, e.g. http://example.com
 

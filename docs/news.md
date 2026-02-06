@@ -1,7 +1,6 @@
 ---
 title: "Latest News"
-span_title: "Latest News"
-intro_background_image: "images/header-bg.jpg"
+span_title: false
 layout: news
 intro_image: "images/news.jpg"
 intro_image_absolute: false

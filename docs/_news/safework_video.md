@@ -1,5 +1,5 @@
 ---
-title: "SafeWorkSA "
+title: "SafeWork SA"
 date: 2025-12-10T11:33:33+09:30
 layout: article
 weight: 2

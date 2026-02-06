@@ -29,22 +29,22 @@ bodyClass: "page-teams"
     <div class="row justify-content-center">
 
       {% assign team = site.team.first %}
-      {% if team.image %}
-      <div class="col-12 col-md-2 team-image p-6">
-          <img width="90" alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
-      </div>
-      {% endif %}
-      <div class="col-12 col-md-10 team-content">
-          <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
-          <p class="team-description">{{ team.jobtitle }}</p>
-          {% if team.linkedinurl %}
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8 col-lg-8 order-2 order-md-1">
+      <div class="team team-single">
+        <a href="{{ team.url | relative_url }}"><h2 class="title">{{team.title}}</h2></a>
+        {% if team.linkedinurl %}
           <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn Profile</a>
-          {% endif %}
-          <div class="team-content">{{ team.content }}</div>
+        {% endif %}
+        <div class="content">{{ team.content }}</div>
       </div>
-                
-            </div>
-        </div>
+    </div>
+    {% if team.image %}
+    <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 position-relative" style="justify-content: flex-end;">
+      <img alt="{{ team.title }}" class="intro-image{% if team.intro_image_absolute %} intro-image-absolute{% endif %}{% if team.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ team.image | relative_url }}" />
+    </div>
+    {% endif %}
+  </div>
     </div>
 </div>
 {% else %}

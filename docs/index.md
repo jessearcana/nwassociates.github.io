@@ -1,12 +1,11 @@
 ---
-title: "Governance, Risk Management, Occupational Health & Safety, Quality & Environmental Advisory and Assurance Services"
-span_title: "Nathan Winter & Associates"
+title: "Nathan Winter & Associates"
+span_title: false
 layout: home
 date: 2026-01-30T10:09:46+10:30
 intro_video: "videos/Nathan-Video.mp4"
 intro_video_absolute: false
 intro_video_hide_on_mobile: true
-intro_background_image: "images/header-bg.jpg"
 show_call_box: true
 ---
 

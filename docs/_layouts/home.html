@@ -3,7 +3,7 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro" {% if page.intro_background_image %} style="background-image: url('{{ page.intro_background_image | relURL }}'); background-position: center; background-size: cover;"{% endif %}>
+<div class="intro" {% if site.intro_background_image %} style="background-image: url('{{ site.intro_background_image | relURL }}'); background-position: center; background-size: cover;"{% endif %}>
   <div class="container">
     {% if page.home_banner_image %}
     <div class="row home-banner" style="margin:0;">
@@ -13,16 +13,16 @@ bodyClass: "page-home"
     {% if page.span_title %}
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-12 text-center">
-        <h1 class="intro-span-title">{{ page.span_title }}</h1>
+        <h1 class="intro-span-title">{{ page.title }}</h1>
       </div>
     </div>
     {% endif %}
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+      {% if page.span_title %}{% else %}
+        <h1 class="intro-title">{{ page.title }}</h1>
+      {% endif %}
         {{ content }}
-        {% if page.show_call_box %}
-          {% include call.html show_button=true %}
-        {% endif %}
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative" style="justify-content: flex-end;">
@@ -35,6 +35,9 @@ bodyClass: "page-home"
       </div>
       {% endif %}
     </div>
+    {% if page.show_call_box %}
+      {% include call.html show_button=true %}
+    {% endif %}
   </div>
 </div>
 {% if site.services_style == "short" %}

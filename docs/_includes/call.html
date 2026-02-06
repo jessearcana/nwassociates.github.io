@@ -1,10 +1,10 @@
 <div class="call">
   <div class="call-box-top">
     {% if site.data.contact.phone %}
-        <div class="call-phone my-1"><strong>Phone: </strong> {{ site.data.contact.phone }} </div>
+        <div class="call-phone my-1"><strong>Phone: </strong> <a href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a></div>
     {% endif %}
     {% if site.data.contact.mobile %}
-        <div class="call-phone my-1"><strong>Mobile: </strong> {{ site.data.contact.mobile }} </div>
+        <div class="call-phone my-1"><strong>Mobile: </strong> <a href="tel:{{ site.data.contact.mobile }}">{{ site.data.contact.mobile }}</a></div>
     {% endif %}
     {% if site.data.contact.email_obfuscated %}
     <div class="call-email my-1"><strong>Email: </strong>
