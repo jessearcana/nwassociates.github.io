@@ -27,7 +27,7 @@ bodyClass: "page-services"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 6 %}
+      {% assign limit = site.services.limit_services | default: 6 %}
       {% for service in site.services limit: limit %}
       <div class="col-12 col-md-4 mb-1">
         <div class="service service-summary">
@@ -52,7 +52,7 @@ bodyClass: "page-services"
 {% if site.services_style == "detailed" %}
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
-    {% assign limit = site.home.limit_services | default: 6 %}
+    {% assign limit = site.services.limit_services | default: 6 %}
     {% for service in site.services limit: limit %}
     <div class="row service-detailed justify-content-start">
       <div class="col-12 col-md-6 my-1 service service-summary">

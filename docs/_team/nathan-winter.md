@@ -1,5 +1,6 @@
 ---
-title: "Nathan Winter, Principal Consultant"
+title: "Nathan Winter"
+description: "Principal Consultant Nathan Winter, a certified Chartered OHS Professional, brings over 20 years of expertise in Health & Safety, Environment, Risk, and Quality management across manufacturing, mining, and utilities industries."
 date: 2026-01-28T12:22:00+10:30
 image: "/images/nathan_winter.jpg"
 jobtitle: "Principal Consultant"

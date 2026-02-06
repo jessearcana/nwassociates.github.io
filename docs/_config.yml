@@ -28,7 +28,10 @@ logo:
   desktop_height: "50px"
 
 home: 
-  limit_services: 3
+  limit_services: 20
+
+services: 
+  limit_services: 20
 
 collections:
   services:
