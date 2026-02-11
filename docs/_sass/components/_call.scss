@@ -20,6 +20,19 @@
     padding: 20px;
     @include media-breakpoint-up(md) {
     }
+    .contact-details li {
+      display: block;
+    }
+
+    .contact-details li .label {
+      width: 5em;
+      float: left;
+      font-weight: bold;
+    }
+
+    .contact-details li .value {
+      margin-left: 5em;
+    }
   }
   .call-box-bottom {
     flex: auto;
