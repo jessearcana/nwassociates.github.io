@@ -19,12 +19,13 @@ detailed_tease: |4+
         - ...
 ---
 
-- Independent Internal Work Health & Safety Audits, including;
-        - Hazardous Chemicals
-        - Electrical Safety
-        - Plant and Equipment
-        - Driving
-        - Lifting Operations
-        - Hazard Manual Tasks
-        - Asbestos Management
-        - Working at Height
+- Conduct of Independent Internal Work Health & Safety Audits, including;
+  - Hazardous Chemical Management
+  - Electrical Safety
+  - Plant and Equipment
+  - Vehicles and Driving
+  - Hazardous Manual Tasks
+  - Asbestos Management
+  - Working at Height
+  - Customer Satisfaction Surveys
+  
