@@ -6,7 +6,7 @@ description: "Conduct of Independent Internal Work Health & Safety Audits"
 date: 2026-01-30T10:09:46+10:30
 layout: service
 weight: 2
-image: "whs_audit.jpg"
+image: "images/whs_audit.jpg"
 show_in_full: true
 detailed_tease: |4+
     - Independent Internal Work Health & Safety Audits, including;
