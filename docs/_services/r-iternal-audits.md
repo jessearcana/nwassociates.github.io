@@ -9,13 +9,13 @@ weight: 2
 image: "images/whs_audit.jpg"
 show_in_full: true
 detailed_tease: |4+
-    - Independent Internal Work Health & Safety Audits, including;
-        - Hazardous Chemicals
-        - Electrical Safety
-        - Plant and Equipment
-        - Driving
-        - Lifting Operations
-        - Hazard Manual Tasks
+    - Conduct of Independent Internal Work Health & Safety Audits, including;
+  - Hazardous Chemical Management
+  - Electrical Safety
+  - Plant and Equipment
+  - Vehicles and Driving
+  - Lifting Operations
+  - Hazardous Manual Tasks
         - ...
 ---
 
@@ -24,8 +24,8 @@ detailed_tease: |4+
   - Electrical Safety
   - Plant and Equipment
   - Vehicles and Driving
+  - Lifting Operations
   - Hazardous Manual Tasks
   - Asbestos Management
   - Working at Height
-  - Customer Satisfaction Surveys
   
