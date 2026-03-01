@@ -5,7 +5,7 @@ span_title: "Independent Internal Work Health & Safety Audits"
 description: "Conduct of Independent Internal Work Health & Safety WHS/OHS Audits"
 date: 2026-01-30T10:09:46+10:30
 layout: service
-weight: 3
+weight: 2
 image: "images/advisory.jpg"
 show_in_full: true
 detailed_tease: |4+
