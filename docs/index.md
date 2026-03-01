@@ -9,4 +9,7 @@ intro_video_hide_on_mobile: true
 show_call_box: true
 ---
 
-Nathan Winter & Associates are Management Consultants that specialise in providing Governance, Risk Management, Occupational Health & Safety, Quality & Environmental Advisory and Assurance Services.
+Nathan Winter & Associates are Occupational Health & Safety Consultants that help businesses reduce risk, meet legal duties, and protect people at work.
+We provide clear, practical advice on workplace safety, officer obligations, and modern slavery compliance.
+Our support helps leaders make confident decisions and avoid costly mistakes.
+
