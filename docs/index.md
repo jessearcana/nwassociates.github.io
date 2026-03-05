@@ -1,5 +1,6 @@
 ---
-title: "Nathan Winter & Associates"
+title: "Nathan Winter & Associates - Health & Safety Consultants"
+heading_title: "Nathan Winter & Associates" # Title gets used in metadata nd the tab heading, but heading_title overrides that for the top level heading used on the actual page.
 span_title: false
 layout: home
 date: 2026-01-30T10:09:46+10:30

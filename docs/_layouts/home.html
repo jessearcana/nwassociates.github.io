@@ -20,7 +20,7 @@ bodyClass: "page-home"
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
       {% if page.span_title %}{% else %}
-        <h1 class="intro-title">{{ page.title }}</h1>
+        <h1 class="intro-title">{% if page.heading_title %}{{ page.heading_title }}{% else %}{{ page.title }}{% endif %}</h1>
       {% endif %}
         {{ content }}
       </div>
