@@ -2,7 +2,7 @@
 title: "NSCA Foundation Safety Forum"
 date: 2025-05-07T10:09:57+09:30
 layout: article
-weight: 1
+weight: 3
 image: "images/nsca_forum.jpg"
 tease: "NSCA Foundation Safety Forum - May 2025. "
 ---
